@@ -19,7 +19,7 @@ function Header() {
         }
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-3 fixed w-full z-10 ">
+    <nav className="flex items-center justify-between flex-wrap p-3 md:fixed w-full z-10 ">
       <div className="flex items-center flex-shrink-0  mr-6">
         {!isDark 
           ? 
@@ -79,7 +79,7 @@ function Header() {
           
         </div>
       </div>
-      <div onClick={toggleDarkMode} className="max-md:hidden fixed right-5 z-10c">
+      <div onClick={toggleDarkMode} className="max-md:hidden   right-5 z-10c">
             {isDark
              ? 
              <BsFillSunFill className='duration-200 hover:text-orange-400 text-3xl mr-5 cursor-pointer' />
