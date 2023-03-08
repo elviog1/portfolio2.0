@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Project({project}) {
   return (
-    <div className='flex flex-col max-w-sm text-center justify-between text-xl dark:bg-gray-300 dark:text-gray-900 rounded-xl hover:scale-105 duration-300 m-2'>
+    <div className='flex flex-col max-w-sm text-center justify-between text-xl dark:bg-gray-300 dark:text-gray-900 rounded-xl hover:scale-105 duration-300 m-2 hover:shadow-xl'>
       <div>
         <span className='font-serif text-center font-bold'>{project.name}</span>
         <img src={project.picture} alt='picture project' className='h-44 w-full' />

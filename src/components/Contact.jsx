@@ -37,7 +37,7 @@ export default function Contact() {
     <section id='contact' className='flex justify-center items-center min-h-screen  font-serif px-2'>
         <div className='w-full max-w-sm'>
             <span className='flex justify-center text-5xl pb-5'>Contact</span>
-            <form className=' flex flex-col  justify-center gap-2 text-xl' onSubmit={handleForm}>
+            <form className=' flex flex-col  justify-center gap-2 text-xl shadow-2xl' onSubmit={handleForm}>
                 <label htmlFor='name' className=' block font-bold'>Name</label>
                 <input 
                   ref={nameRef} 
@@ -63,7 +63,7 @@ export default function Contact() {
                   className='resize-none leading-10 w-full bg-gray-300 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700  px-3 transition-colors duration-200 ease-in-out'
                   onChange={(e)=> setMessage(e.target.value)}>
                 </textarea>
-                <button className='w-full leading-10 font-bold text-xl mt-2 dark:bg-gray-300 dark:text-gray-800 rounded-lg' >Send</button>
+                <button className='w-full leading-10 font-bold text-xl mt-2 dark:bg-gray-300 hover:bg-gray-400 dark:text-gray-800 rounded-lg' >Send</button>
             </form>
         </div>
         <ToastContainer />
