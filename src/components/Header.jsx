@@ -30,7 +30,7 @@ function Header() {
         
       </div>
       <div className=" md:hidden flex items-center gap-4">
-      <div onClick={toggleDarkMode} className="">
+      <div onClick={toggleDarkMode} className="text-3xl">
             {isDark ? <BsFillSunFill />   : <BsFillMoonStarsFill />  }
       </div>
         <button
