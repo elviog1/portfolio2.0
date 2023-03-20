@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Certificate() {
   return (
-    <section className='flex flex-col justify-center items-center min-h-screen gap-10'>
+    <section className='flex flex-col justify-center items-center min-h-screen gap-10 max-w-6xl mx-auto my-0'>
         <div className='w-full'>
             <h2 className='flex justify-center font-serif text-5xl pb-5 mb-5 text-center'>Languages ​​& Certificates</h2>
             <div className='flex justify-around'>

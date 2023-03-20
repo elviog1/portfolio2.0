@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <section id='about' className='flex justify-center items-center min-h-screen '>
+    <section id='about' className='flex justify-center items-center max-w-6xl mx-auto my-0 '>
         <div className='w-full'>
             <h2 className='flex justify-center font-serif text-5xl pb-5'>About me</h2>
             <div className='flex justify-evenly w-full flex-wrap'>
