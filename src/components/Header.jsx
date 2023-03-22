@@ -19,7 +19,8 @@ function Header() {
         }
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-3 md:fixed w-full z-10 ">
+    // max-w-6xl my-0 mx-auto flex justify-between items-center h-[60px] sticky top-0
+    <nav className="flex items-center justify-between flex-wrap pt-2   z-10 max-w-6xl mx-auto my-0">
       <div className="flex items-center flex-shrink-0  mr-6">
         {!isDark 
           ? 
@@ -66,7 +67,7 @@ function Header() {
           isOpen ? '' : 'hidden'
         } w-full block flex-grow md:flex md:items-center md:w-auto justify-end`}
       >
-        <div className="text-sm md:flex-grow">
+        <div className="text-sm md:flex-grow absolute">
           {listLI.map((link,index) =>(
             <a
             href={link.href}

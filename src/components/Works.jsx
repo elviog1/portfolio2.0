@@ -10,7 +10,7 @@ export default function Works() {
         {name:"Amazing Events",description:"MindHub project where different types of events are rendered. It has a search engine that shows the events found, each one has its detail and there is a section of the statistics of the events.", picture:"amazingEvents1.jpeg",url:"https://amazing-e.vercel.app/",github:"https://github.com/elviog1/amazing-events-front"}
     ]
   return (
-    <section id='projects' className='flex justify-center items-center min-h-screen '>
+    <section id='projects' className='flex justify-center items-center min-h-screen max-w-6xl mx-auto my-0'>
         <div className='w-full'>
             <span className='flex justify-center font-serif text-5xl pb-5'>Projects</span>
             <div className='flex flex-wrap gap-5 justify-center'>
