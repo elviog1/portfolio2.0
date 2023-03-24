@@ -3,6 +3,7 @@ import Project from './Project'
 
 export default function Works() {
     const projects = [
+        {name:"Login App",description:"Small application through a registration form you can enter a tab where you can leave a comment for the community.", picture:"login-app.jpeg",url:"https://loggin-app.vercel.app/",github:"https://github.com/elviog1/loggin-app"},
         {name: "Pizzeria", description: "Personal project where I carry out an ecommerce where you can buy, withdraw and edit the quantities of the product and as an administrator you get a table with the user's order to make.", picture: "pizzeria1.jpeg",  url: "https://pizzeria-solano.vercel.app/", github: "https://github.com/elviog1/id-pizza" },
         {name: "Memory Game", description: "Game in which you will have to find two identical cards until there are no cards left upside down.", picture: "game1.jpeg", url:"https://memory-fruit-game.netlify.app/", github:"https://github.com/elviog1/game-memory"},
         {name:"Rifa Online", description:"Small application of a raffle in which by entering a name a board will be displayed with the available numbers, once the number is saved the option to pay with MercadoPago will be enabled and once the raffle time is over, no more numbers can be purchased.", picture:"rifa2.jpeg", url:"https://rifa-ten.vercel.app/", github:"https://github.com/elviog1/rifa-front"},
