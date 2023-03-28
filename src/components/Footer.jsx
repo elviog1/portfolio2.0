@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail, AiFillYoutube,AiOutlineWhatsApp } from "react-icons/ai";
 import { BsRocket } from "react-icons/bs";
 export default function Footer() {
@@ -8,10 +9,11 @@ export default function Footer() {
             behavior: "smooth"
         })
     }
+    const {t} = useTranslation()
   return (
     <footer className='flex justify-between text-5xl mb-5 flex-wrap gap-3 max-w-6xl mx-auto my-0'>
         <div className='item-start flex'>
-            <a href='Elvio_Galeano(Developer).pdf'  target="_blank" rel="noopener noreferrer" download="Elvio_Galeano.pdf" className='text-2xl font-bold font-serif duration-200 hover:text-orange-400' >Download CV</a>
+            <a href='Elvio_Galeano(Developer).pdf'  target="_blank" rel="noopener noreferrer" download="Elvio_Galeano.pdf" className='text-2xl font-bold font-serif duration-200 hover:text-orange-400' >{t("footer-cv")}</a>
         </div>
         <div className='flex gap-3 '>
             <a target='_blank' className='hover:animate-pulse duration-200 hover:text-gray-600' href='https://github.com/elviog1' ><AiFillGithub /></a>

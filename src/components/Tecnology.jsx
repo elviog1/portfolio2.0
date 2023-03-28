@@ -1,12 +1,14 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import { DiHtml5 , DiCss3, DiNodejsSmall } from "react-icons/di";
 import { SiRedux, SiJavascript, SiReact, SiTailwindcss, SiExpress, SiMongodb, SiPostman, SiGithub } from "react-icons/si";
 export default function Tecnology() {
+  const {t} = useTranslation()
 
   return (
     <section className='flex flex-col justify-center items-center min-h-screen gap-10 max-w-6xl mx-auto my-0'>
         <div className='w-full'>
-            <span className='flex justify-center font-serif text-5xl pb-5 mb-5'>Technologies</span>
+            <span className='flex justify-center font-serif text-5xl pb-5 mb-5'>{t("technologies-title")}</span>
             <div className='flex flex-wrap justify-center gap-5'>
 
               <div className='flex flex-col overflow-hidden items-center group'>

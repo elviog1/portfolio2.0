@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useTranslation } from 'react-i18next';
 export default function Contact() {
     const [name,setName] = useState("")
     const [email,setEmail] = useState("")
@@ -9,6 +10,8 @@ export default function Contact() {
     const nameRef = useRef()
     const emailRef = useRef()
     const messageRef = useRef()
+    const {t} = useTranslation()
+
 
     const handleForm = (e)=>{
         e.preventDefault()
@@ -36,9 +39,9 @@ export default function Contact() {
   return (
     <section id='contact' className='flex justify-center items-center min-h-screen  font-serif px-2'>
         <div className='w-full max-w-sm'>
-            <span className='flex justify-center text-5xl pb-5'>Contact</span>
+            <span className='flex justify-center text-5xl pb-5'>{t("contact-title")}</span>
             <form className=' flex flex-col  justify-center gap-2 text-xl shadow-2xl' onSubmit={handleForm}>
-                <label htmlFor='name' className=' block font-bold'>Name</label>
+                <label htmlFor='name' className=' block font-bold'>{t("contact-name")}</label>
                 <input 
                   ref={nameRef} 
                   id='name' 
@@ -47,7 +50,7 @@ export default function Contact() {
                   required={true}
                   className='w-full bg-gray-300 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700  px-3 leading-8 transition-colors duration-200 ease-in-out' 
                   onChange={(e)=> setName(e.target.value)} />
-                <label htmlFor='email' className=' block font-bold'>Email</label>
+                <label htmlFor='email' className=' block font-bold'>{t("contact-email")}</label>
                 <input 
                   ref={emailRef} 
                   id='email' 
@@ -56,14 +59,14 @@ export default function Contact() {
                   type="email" 
                   className='w-full bg-gray-300 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700  px-3 leading-8 transition-colors duration-200 ease-in-out' 
                   onChange={(e)=> setEmail(e.target.value)}/>
-                <label htmlFor='message' className=' block font-bold'>Message</label>
+                <label htmlFor='message' className=' block font-bold'>{t("contact-message")}</label>
                 <textarea 
                   ref={messageRef} 
                   name='textarea' 
                   className='resize-none leading-10 w-full bg-gray-300 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700  px-3 transition-colors duration-200 ease-in-out'
                   onChange={(e)=> setMessage(e.target.value)}>
                 </textarea>
-                <button className='w-full leading-10 font-bold text-xl mt-2 dark:bg-gray-300 hover:bg-gray-400 dark:text-gray-800 rounded-lg' >Send</button>
+                <button className='w-full leading-10 font-bold text-xl mt-2 dark:bg-gray-300 hover:bg-gray-400 dark:text-gray-800 rounded-lg' >{t("contact-send")}</button>
             </form>
         </div>
         <ToastContainer />

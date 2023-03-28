@@ -1,15 +1,16 @@
 import React from 'react'
-
+import { useTranslation } from 'react-i18next'
 export default function About() {
+  const {t} = useTranslation()
   return (
     <section id='about' className='flex justify-center items-center max-w-6xl mx-auto my-0 '>
         <div className='w-full'>
             <div className='flex justify-evenly w-full flex-wrap '>
                 <img src='elvio-selfie.jpeg' alt='Picture Elvio' className='rounded-full w-64 overflow-hidden object-cover shadow' />
                 <div className=' max-w-xl text-left self-center'>
-                  <h2 className='flex  font-serif text-5xl pb-5'>About me</h2>
+                  <h2 className='flex  font-serif text-5xl pb-5'>{t("about-title")}</h2>
                   <span className='text-xl'>
-                  I am a Frontend Developer, a programming Technician student at the University of Quilmes. I finished a bootcamp at MINDHUB where I learned to use the following technologies: Javascript, CSS, Bootstrap, React / React Native, Tailwind, Redux, Node.js, Express.js, MongoDB, Postman, REST API. We develop projects simulating a REAL work environment, implementing Agile SCRUM Methodologies.
+                  {t("about-description")}
                   </span>
                 </div>
             </div>
