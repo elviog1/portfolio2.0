@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { DiHtml5 , DiCss3, DiNodejsSmall } from "react-icons/di";
-import { SiRedux, SiJavascript, SiReact, SiTailwindcss, SiExpress, SiMongodb, SiPostman, SiGithub } from "react-icons/si";
+import { SiRedux, SiJavascript, SiReact, SiTailwindcss, SiExpress, SiMongodb, SiPostman, SiGithub,SiSqlite } from "react-icons/si";
 export default function Tecnology() {
   const {t} = useTranslation()
 
@@ -59,6 +59,10 @@ export default function Tecnology() {
               <div className='flex flex-col overflow-hidden items-center group'>
                 <SiGithub className='text-gray-700 duration-300 text-9xl relative group-hover:-translate-y-32' />
                 <span className='relative translate-y-8 group-hover:-translate-y-16 text-xl font-bold font-serif text-gray-700'>Github</span>
+              </div>
+              <div className='flex flex-col overflow-hidden items-center group'>
+                <SiSqlite className='text-blue-500 duration-300 text-9xl relative group-hover:-translate-y-32' />
+                <span className='relative translate-y-8 group-hover:-translate-y-16 text-xl font-bold font-serif text-blue-500'>SQLite</span>
               </div>
 
             </div>
