@@ -39,6 +39,7 @@ i18n
                 "projects-description4":"Small application of a raffle in which by entering a name a board will be displayed with the available numbers, once the number is saved the option to pay with MercadoPago will be enabled and once the raffle time is over, no more numbers can be purchased.",
                 "projects-description5":"Project of a football team for the blind, where the players are shown with their personal description, a contact tab, club information and as an administrator you can create and edit players.",
                 "projects-description6":"MindHub project where different types of events are rendered. It has a search engine that shows the events found, each one has its detail and there is a section of the statistics of the events.",
+                "projects-description7":"Personal application where I play live videos from youtube and filter according to the selected category.",
                 "projects-code": "Code",
                 "projects-deploy": "Deploy",
                 //contact
@@ -79,6 +80,7 @@ i18n
                 "projects-description4":"Pequeña aplicación de una rifa en la que al ingresar un nombre se desplegará un tablero con los números disponibles, una vez guardado el número se habilitará la opción de pagar con MercadoPago y una vez finalizado el tiempo de la rifa no se podrán adquirir más números.",
                 "projects-description5":"Proyecto de un equipo de fútbol para ciegos, donde se muestran los jugadores con su descripción personal, ficha de contacto, información del club y como administrador puedes crear y editar jugadores.",
                 "projects-description6":"Proyecto MindHub donde se renderizan diferentes tipos de eventos. Tiene un buscador que muestra los eventos encontrados, cada uno tiene su detalle y hay un apartado de las estadísticas de los eventos.",
+                "projects-description7":"Aplicacion personal donde reproduzco videos en vivo de youtube y filtra segun la categoria seleccionada.",
                 "projects-code": "Codigo",
                 "projects-deploy": "Desplegar",
                 //contact
