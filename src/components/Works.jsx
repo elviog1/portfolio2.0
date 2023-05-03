@@ -5,7 +5,8 @@ export default function Works() {
     const projects = [
         {name:"Login App",description:"projects-description1", picture:"login-app.jpeg",url:"https://loggin-app.vercel.app/",github:"https://github.com/elviog1/loggin-app"},
         {name: "Pizzeria", description: "projects-description2", picture: "pizzeria1.jpeg",  url: "https://pizzeria-solano.vercel.app/", github: "https://github.com/elviog1/id-pizza" },
-        {name: "Memory Game", description: "projects-description3", picture: "game1.jpeg", url:"https://memory-fruit-game.netlify.app/", github:"https://github.com/elviog1/game-memory"},
+        {name: "Memory Game", description: "projects-description3", picture: "braille-traductor.jpeg", url:"https://memory-fruit-game.netlify.app/", github:"https://github.com/elviog1/game-memory"},
+        {name: "Braille Traductor", description: "projects-description8", picture: "game1.jpeg", url:"https://braille-traductor.vercel.app/", github:"https://github.com/elviog1/braille-traductor"},
         {name: "Youtu-Channels", description: "projects-description7", picture: "youtu-channels.jpeg", url:"https://youtu-channels.vercel.app/", github:"https://github.com/elviog1/youtu-channels"},
         {name:"Rifa Online", description:"projects-description4", picture:"rifa2.jpeg", url:"https://rifa-ten.vercel.app/", github:"https://github.com/elviog1/rifa-front"},
         {name:"Futbol Ciego Avellaneda", description: "projects-description5", picture:"futbolciego1.jpeg", url:"https://futbolciegoavellaneda.vercel.app/", github:"https://github.com/elviog1/piranias"},
