@@ -40,7 +40,7 @@ i18n
                 "projects-description5":"Project of a football team for the blind, where the players are shown with their personal description, a contact tab, club information and as an administrator you can create and edit players.",
                 "projects-description6":"MindHub project where different types of events are rendered. It has a search engine that shows the events found, each one has its detail and there is a section of the statistics of the events.",
                 "projects-description7":"Personal application where I play live videos from youtube and filter according to the selected category.",
-                "projects-description7":"Page where we will write a sentence and get the result in Braille.",
+                "projects-description8":"Page where we will write a sentence and get the result in Braille.",
                 "projects-code": "Code",
                 "projects-deploy": "Deploy",
                 //contact
