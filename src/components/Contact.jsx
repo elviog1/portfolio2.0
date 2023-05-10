@@ -37,10 +37,10 @@ export default function Contact() {
         }
     
   return (
-    <section id='contact' className='flex justify-center items-center min-h-screen  font-serif px-2'>
+    <section id='contact' className='flex justify-center items-center my-10  font-serif px-2'>
         <div className='w-full max-w-sm'>
             <span className='flex justify-center text-5xl pb-5'>{t("contact-title")}</span>
-            <form className=' flex flex-col  justify-center gap-2 text-xl shadow-2xl' onSubmit={handleForm}>
+            <form className=' flex flex-col  justify-center gap-2 text-xl ' onSubmit={handleForm}>
                 <label htmlFor='name' className=' block font-bold'>{t("contact-name")}</label>
                 <input 
                   ref={nameRef} 

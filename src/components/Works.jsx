@@ -15,7 +15,7 @@ export default function Works() {
   const {t} = useTranslation()
 
   return (
-    <section id='projects' className='flex justify-center items-center min-h-screen max-w-6xl mx-auto my-0'>
+    <section id='projects' className='flex justify-center items-center  max-w-6xl mx-auto '>
         <div className='w-full'>
             <span className='flex justify-center font-serif text-5xl pb-5'>{t("projects-title")}</span>
             <div className='flex flex-wrap gap-5 justify-center'>
