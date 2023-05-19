@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import Project from './Project'
 export default function Works() {
     const projects = [
+        {name:"Shooting",description:"projects-description9", picture:"Shooting.jpeg",url:"https://game-shooting.vercel.app/",github:"https://github.com/elviog1/game-shooting"},
         {name:"Login App",description:"projects-description1", picture:"login-app.jpeg",url:"https://loggin-app.vercel.app/",github:"https://github.com/elviog1/loggin-app"},
         {name: "Pizzeria", description: "projects-description2", picture: "pizzeria1.jpeg",  url: "https://pizzeria-solano.vercel.app/", github: "https://github.com/elviog1/id-pizza" },
         {name: "Memory Game", description: "projects-description3", picture: "game1.jpeg", url:"https://memory-fruit-game.netlify.app/", github:"https://github.com/elviog1/game-memory"},
@@ -15,7 +16,7 @@ export default function Works() {
   const {t} = useTranslation()
 
   return (
-    <section id='projects' className='flex justify-center items-center  max-w-6xl mx-auto '>
+    <section id='projects' className='flex justify-center items-center  max-w-7xl mx-auto '>
         <div className='w-full'>
             <span className='flex justify-center font-serif text-5xl pb-5'>{t("projects-title")}</span>
             <div className='flex flex-wrap gap-5 justify-center'>
