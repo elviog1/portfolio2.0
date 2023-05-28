@@ -42,6 +42,7 @@ i18n
                 "projects-description7":"Personal application where I play live videos from youtube and filter according to the selected category.",
                 "projects-description8":"Page where we will write a sentence and get the result in Braille.",
                 "projects-description9":"Game in which you will have to click on the pointers that appear to score points and participate for being the best on the podium.",
+                "projects-description10":"Landing page cloned from the official site of Free Figma Templates that offers its services for free.",
                 "projects-code": "Code",
                 "projects-deploy": "Deploy",
                 //contact
@@ -85,6 +86,7 @@ i18n
                 "projects-description7":"Aplicacion personal donde reproduzco videos en vivo de youtube y filtra segun la categoria seleccionada.",
                 "projects-description8":"Pagina donde escribiremos una frase y obtendremos el resultado en Braille.",
                 "projects-description9":"Juego en el que tendras que clickear en los punteros que aparecen para sumar puntos y participa por ser el mejor en el podio.",
+                "projects-description10":"Landing page clonada del sitio oficial de Free Figma Templates que ofrece sus servicios gratis.",
                 "projects-code": "Codigo",
                 "projects-deploy": "Desplegar",
                 //contact
