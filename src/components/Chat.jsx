@@ -8,7 +8,7 @@ export default function Chat() {
     {
       id: "1",
       type: "bot",
-      text: "Hola soy el esclavo de Elvio, ¿Que necesitas saber? 👳‍♂️",
+      text: "Hola soy Bobi, el asistente virtual de Elvio, ¿Que necesitas saber? 🤖",
     },
   ]);
   const EXAMPLES = [
@@ -64,7 +64,7 @@ export default function Chat() {
         >
           Whatsapp
         </a>
-        , si necesitas mas podras encontrarlo en el pie de pagina (Github,
+        , si necesitas más podras encontrarlo en el pie de pagina (Github,
         Curriculum, etc.) 🤫
       </p>
     ),
@@ -136,12 +136,19 @@ export default function Chat() {
     <div>
       {isOpen ? (
           <div className="max-w-sm m-auto p-2 pt-0 bg-gradient-to-t from-gray-700 to-gray-500 rounded-lg fixed bottom-10 right-10">
-            <div  className="flex justify-end items-center ">
-                <button onClick={handleOpen} className="bg-red-500 hover:bg-red-600 relative left-2 w-10 py-1 font-bold rounded-tr-lg">X</button>
+            <div  className="flex justify-between items-center ">
+              <div className="flex">
+                <span className="text-2xl self-center">🤖</span>
+                <div className="flex flex-col pl-1">
+                  <span className=" font-bold">Bobi</span>
+                  <span className="text-xs">En linea</span>
+                </div>
+              </div>
+                <button onClick={handleOpen} className="bg-red-500 hover:bg-red-600 relative left-2 w-10 py-2 font-bold rounded-tr-lg">X</button>
             </div>
           <div
             ref={chatRef}
-            className="rounded p-4 bg-gradient-to-t  from-gray-700 to-gray-500 h-80 overflow-y-auto flex flex-col gap-2"
+            className="rounded p-4 bg-transparent h-80 overflow-y-auto flex flex-col gap-2"
           >
             {message.map((item) => (
               <div
@@ -176,8 +183,8 @@ export default function Chat() {
           </form>
         </div>
       ) : (
-        <button className="fixed bottom-5 right-10 text-5xl" onClick={handleOpen}>
-          👳‍♂️
+        <button className="fixed bottom-5 right-10" onClick={handleOpen}>
+          <span className="text-5xl ">💬</span>
         </button>
       )}
     </div>
