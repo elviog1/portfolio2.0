@@ -1,6 +1,7 @@
 import './App.css'
 import About from './components/About'
 import Certificate from './components/Certificate'
+import Chat from './components/Chat'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -27,6 +28,7 @@ function App() {
       <Tecnology />
       <Works />
       <Contact />
+      <Chat />
       <Footer />
     </>
   )
