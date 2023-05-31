@@ -89,7 +89,7 @@ export default function Chat() {
     ),
     unknown: <p>Mi no entender... vamos de nuevo.</p>,
   };
-  const api_key = "jKMzhBeEutWEeOhx4YHpofvpYua6QmLMkMsNyniB"
+  const api_key = import.meta.env.VITE_API_KEY
   async function handleSubmit(event) {
     event.preventDefault();
     if (loading) return;
