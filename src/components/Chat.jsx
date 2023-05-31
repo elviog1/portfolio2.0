@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 export default function Chat() {
-  const api_key = import.meta.env.VITE_API_KEY
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
   const chatRef = useRef(null);
@@ -90,7 +89,7 @@ export default function Chat() {
     ),
     unknown: <p>Mi no entender... vamos de nuevo.</p>,
   };
-
+  const api_key = "jKMzhBeEutWEeOhx4YHpofvpYua6QmLMkMsNyniB"
   async function handleSubmit(event) {
     event.preventDefault();
     if (loading) return;
