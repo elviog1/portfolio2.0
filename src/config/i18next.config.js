@@ -76,7 +76,7 @@ i18n
                 //technologies
                 "technologies-title" : "Tecnologias",
                 //projects
-                "projects-title": "Projectos",
+                "projects-title": "Proyectos",
                 "projects-description1": "Pequeña aplicación a través de un formulario de registro puede ingresar a una pestaña donde puede dejar un comentario para la comunidad.",
                 "projects-description2": "Proyecto personal donde realizo un ecommerce donde puedes comprar, retirar y editar las cantidades del producto y como administrador te sale una tabla con el pedido del usuario a realizar.",
                 "projects-description3":"Juego en el que tendrás que encontrar dos cartas iguales hasta que no queden cartas boca abajo.",

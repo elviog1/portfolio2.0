@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Project from './Project'
 export default function Works() {
@@ -16,14 +16,39 @@ export default function Works() {
     ]
   const {t} = useTranslation()
 
+  const noticiasPorSeccion = 6; // Define el número de noticias por sección
+
+  const [seccionActual, setSeccionActual] = useState(1);
+
+  const totalSecciones = Math.ceil(projects.length / noticiasPorSeccion); // cantidad de noticias dividido noticias secciones
+
+  const cambiarSeccion = (seccion) => {
+    setSeccionActual(seccion);
+  };
+  const startIndex = (seccionActual - 1) * noticiasPorSeccion;
+  const endIndex = startIndex + noticiasPorSeccion;
+  const noticiasSeccion = projects.slice(startIndex, endIndex);
+
   return (
     <section id='projects' className='flex justify-center items-center  max-w-7xl mx-auto '>
         <div className='w-full'>
-            <span className='flex justify-center font-serif text-5xl pb-5'>{t("projects-title")}</span>
+            <span className='flex justify-center font-serif text-5xl pb-5'>{t("projects-title")} - {projects.length}</span>
             <div className='flex flex-wrap gap-5 justify-center'>
-                {projects.map((project,index) =>(
-                    <Project key={index} project={project} />
+                {noticiasSeccion.map((project,index) =>(
+                    <Project key={index} project={project} noticiasPorSeccion={noticiasPorSeccion}
+                    seccionActual={seccionActual} />
                 ))}
+            </div>
+            <div className='flex justify-center'>
+            {Array.from({ length: totalSecciones }, (_, index) => (
+                <button
+                key={index + 1}
+                onClick={() => cambiarSeccion(index + 1)}
+                className="hover:bg-gray-700 px-3 py-2 rounded-md text-2xl font-bold my-5"
+                >
+                  {index + 1}
+                </button>
+              ))}
             </div>
         </div>
     </section>
