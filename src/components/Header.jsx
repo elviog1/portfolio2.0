@@ -71,7 +71,7 @@ function Header() {
           isOpen ? '' : 'hidden'
         } w-full block flex-grow md:flex md:items-center md:w-auto justify-end`}
       >
-        <div className="text-sm md:flex-grow absolute">
+        <div className="text-sm md:flex-grow md:text-end text-center">
           {listLI.map((link,index) =>(
             <a
             href={link.href}
