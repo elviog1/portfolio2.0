@@ -6,7 +6,7 @@ export default function Works() {
     {
       name: "Mu Online",
       description: "projects-description11",
-      picture: "../../public/Mu-online.png",
+      picture: "Mu-online.png",
       url: "https://mu-online-items-next.vercel.app/",
       github: "https://github.com/elviog1/mu-online-items-next",
     },
