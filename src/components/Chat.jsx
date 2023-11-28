@@ -42,7 +42,7 @@ export default function Chat() {
     yo: (
       <p>
         Hola, mi maestro se llama Elvio Galeano, es Desarrollador Frontend,
-        tiene 29 años, vive en San Francisco Solano, Buenos Aires, Argentina.{" "}
+        tiene 30 años, vive en San Francisco Solano, Buenos Aires, Argentina.{" "}
       </p>
     ),
     contacto: (
@@ -89,7 +89,7 @@ export default function Chat() {
     ),
     unknown: <p>Mi no entender... vamos de nuevo.</p>,
   };
-  const api_key = import.meta.env.VITE_API_KEY
+  const api_key = import.meta.env.VITE_API_KEY;
   async function handleSubmit(event) {
     event.preventDefault();
     if (loading) return;
@@ -135,17 +135,22 @@ export default function Chat() {
   return (
     <div>
       {isOpen ? (
-          <div className="max-w-sm m-auto p-2 pt-0 bg-gradient-to-t from-gray-700 to-gray-500 rounded-lg fixed bottom-10 right-10">
-            <div  className="flex justify-between items-center ">
-              <div className="flex">
-                <span className="text-2xl self-center">🤖</span>
-                <div className="flex flex-col pl-1">
-                  <span className=" font-bold">Bobi</span>
-                  <span className="text-xs">En linea</span>
-                </div>
+        <div className="max-w-sm m-auto p-2 pt-0 bg-gradient-to-t from-gray-700 to-gray-500 rounded-lg fixed bottom-10 right-10">
+          <div className="flex justify-between items-center ">
+            <div className="flex">
+              <span className="text-2xl self-center">🤖</span>
+              <div className="flex flex-col pl-1">
+                <span className=" font-bold">Bobi</span>
+                <span className="text-xs">En linea</span>
               </div>
-                <button onClick={handleOpen} className="bg-red-500 hover:bg-red-600 relative left-2 w-10 py-2 font-bold rounded-tr-lg">X</button>
             </div>
+            <button
+              onClick={handleOpen}
+              className="bg-red-500 hover:bg-red-600 relative left-2 w-10 py-2 font-bold rounded-tr-lg"
+            >
+              X
+            </button>
+          </div>
           <div
             ref={chatRef}
             className="rounded p-4 bg-transparent h-80 overflow-y-auto flex flex-col gap-2"
@@ -178,7 +183,7 @@ export default function Chat() {
                 loading || question.length < 4 ? "bg-blue-300" : "bg-blue-500"
               }`}
             >
-              {loading || question.length < 4 ? '❌' : '✔' }
+              {loading || question.length < 4 ? "❌" : "✔"}
             </button>
           </form>
         </div>
