@@ -54,6 +54,7 @@ i18n.use(initReactI18next).init({
           "Landing page cloned from the official site of Free Figma Templates that offers its services for free.",
         "projects-description11":
           "Personal project of the Mu Online video game where game information is shown, such as the available characters and the different sets of each character.",
+          "projects-description12":"Application where we can leave marks on a map with information that will be stored in a database",  
         "projects-code": "Code",
         "projects-deploy": "Deploy",
         //contact
@@ -111,7 +112,8 @@ i18n.use(initReactI18next).init({
           "Landing page clonada del sitio oficial de Free Figma Templates que ofrece sus servicios gratis.",
         "projects-description11":
           "Proyecto personal del videojuego Mu Online donde se muestra informacion del juego, como los personajes disponibles y los diferentes sets de cada personaje.",
-        "projects-code": "Codigo",
+          "projects-description12":"Aplicacion donde podremos dejar marcas en un mapa con informacion que se almacenara en una base de datos",
+          "projects-code": "Codigo",
         "projects-deploy": "Desplegar",
         //contact
         "contact-title": "Contacto",

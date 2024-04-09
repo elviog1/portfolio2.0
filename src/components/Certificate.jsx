@@ -21,16 +21,16 @@ export default function Certificate() {
         <div>
             <div className='flex justify-center flex-wrap gap-4'>
                 <a target='_blank' href='https://www.credly.com/badges/b95e81c0-105e-4baa-a0e3-93ec593ceb7a/linked_in_profile'>
-                    <img src='https://images.credly.com/size/340x340/images/9ab2bbf5-a5cd-4c36-9c5a-1ce7e0e0cd32/Insignia_MERN-20.png' alt='Certificado de Mindhub' className='w-60 ' />
+                    <img src='https://images.credly.com/size/340x340/images/9ab2bbf5-a5cd-4c36-9c5a-1ce7e0e0cd32/Insignia_MERN-20.png' alt='Certificado de Mindhub' className='w-80 h-60 object-contain' />
                 </a>
                 <a target='_blank'>
-                    <img src='openbootcampJS.jpeg' alt='Certificado de JS' className='w-80 ' />
+                    <img src='openbootcampJS.jpeg' alt='Certificado de JS' className='w-80 object-contain h-60' />
                 </a>
                 <a target='_blank' href='https://www.freecodecamp.org/certification/Elviog1/javascript-algorithms-and-data-structures'>
-                    <img src='freecodecamp.jpeg' alt='Certificado de JS' className='w-80 ' />
+                    <img src='freecodecamp.jpeg' alt='Certificado de JS' className='w-80 object-contain h-60' />
                 </a>
                 <a target='_blank' href='https://storage.googleapis.com/openvitae-prod/diplomas%2F2907393f-6c9a-4568-9e78-c9f3b06a47f9.pdf'>
-                    <img src='openbootcamp-sql.jpeg' alt='Certificado de SQL' className='w-80 ' />
+                    <img src='openbootcamp-sql.jpeg' alt='Certificado de SQL' className='w-80 object-contain h-60' />
                 </a>
             </div>
         </div>
